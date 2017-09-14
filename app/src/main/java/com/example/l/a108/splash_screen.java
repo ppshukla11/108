@@ -11,6 +11,8 @@ public class splash_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        GifImageView gifImageView= (GifImageView) findViewById(R.id.gifview);
+        gifImageView.setGifImageResource(R.drawable.splash);
         new Handler().postDelayed(new Runnable()
         {
             public void run()
